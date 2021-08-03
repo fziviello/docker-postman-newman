@@ -1,0 +1,14 @@
+version: "2.0"
+services:
+  spotify_test:
+      container_name: spotify
+      build: .
+      image: postman_report
+      command:
+        run spotify.postman_collection.json
+        -e environments/spotify.postman_environment.json
+        -r html,cli
+        --reporter-html-export reports/report.html
+        --reporter-html-template reports/template.hbs
+      volumes:
+        - ./src:/etc/newman
