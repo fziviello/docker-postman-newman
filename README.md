@@ -3,7 +3,7 @@
 In this example I have created a postman collection based on spotify.
 To get a positive report you need to generate a new [Token](https://developer.spotify.com/console)
 
-
+[![docker-compose-actions-workflow](https://github.com/fziviello/docker-postman-newman/actions/workflows/main.yml/badge.svg)](https://github.com/fziviello/docker-postman-newman/actions/workflows/main.yml)
 
 # Build Docker Image
 
