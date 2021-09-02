@@ -7,8 +7,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Step 1 - Run Docker
         run: docker-compose up
-      - name: Step 2 - Attach Report
-        uses: actions/upload-artifact@v2
+      - name: Step 2 - Preview Report
+        uses: pavi2410/html-preview-action@v2
         with:
-          name: Report
-          path: ./src/reports/report.html
+           html_file: './src/reports/report.html'
+
