@@ -8,7 +8,7 @@ jobs:
       - name: Build the stack
         run: docker-compose up
       - name: Upload Results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2-preview
         with:
           name: Report
           path: ./src/reports/report.html
